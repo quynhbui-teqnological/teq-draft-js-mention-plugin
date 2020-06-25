@@ -1,0 +1,83 @@
+Arguments: 
+  /Users/quynhbui/.nvm/versions/node/v12.11.0/bin/node /Users/quynhbui/.yarn/bin/yarn.js add rimraf:
+
+PATH: 
+  /Users/quynhbui/.rvm/gems/ruby-2.6.3/bin:/Users/quynhbui/.rvm/gems/ruby-2.6.3@global/bin:/Users/quynhbui/.rvm/rubies/ruby-2.6.3/bin:/Users/quynhbui/.local/bin:/Users/quynhbui/Library/Python/3.8/bin:/Users/quynhbui/.yarn/bin:/Users/quynhbui/.config/yarn/global/node_modules/.bin:/Users/quynhbui/.nvm/versions/node/v12.11.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/quynhbui/.rvm/gems/ruby-2.6.3/bin:/Users/quynhbui/.rvm/gems/ruby-2.6.3@global/bin:/Users/quynhbui/.rvm/rubies/ruby-2.6.3/bin:/Users/quynhbui/.yarn/bin:/Users/quynhbui/.config/yarn/global/node_modules/.bin:/Users/quynhbui/Library/Python/3.8/bin:/Users/quynhbui/.rvm/bin:/Users/quynhbui/flutter/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.11.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: Invalid URL
+      at module.exports.module.exports (/Users/quynhbui/.yarn/lib/cli.js:71820:9)
+      at urlParts (/Users/quynhbui/.yarn/lib/cli.js:31614:75)
+      at NpmRegistry.isRequestToRegistry (/Users/quynhbui/.yarn/lib/cli.js:31657:19)
+      at NpmRegistry.<anonymous> (/Users/quynhbui/.yarn/lib/cli.js:31689:31)
+      at Generator.next (<anonymous>)
+      at step (/Users/quynhbui/.yarn/lib/cli.js:310:30)
+      at /Users/quynhbui/.yarn/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+      at new F (/Users/quynhbui/.yarn/lib/cli.js:5301:28)
+      at NpmRegistry.<anonymous> (/Users/quynhbui/.yarn/lib/cli.js:307:12)
+
+npm manifest: 
+  {
+    "name": "teq-draft-js-mention-plugin",
+    "version": "1.0.2",
+    "description": "Teq Mention Plugin for DraftJS",
+    "author": {
+      "name": "Quynh Bui",
+      "email": "quynhbui@teqnological.asia",
+      "url": "https://teqnological.asia"
+    },
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "main": "lib/index.cjs.js",
+    "module": "lib/index.esm.js",
+    "files": [
+      "lib"
+    ],
+    "keywords": [
+      "editor",
+      "wysiwyg",
+      "draft",
+      "react",
+      "ux",
+      "components",
+      "widget",
+      "react-component"
+    ],
+    "scripts": {
+      "clean": "../node_modules/.bin/rimraf lib",
+      "build": "yarn clean && yarn build:js && yarn build:css",
+      "build:js": "../node_modules/.bin/rollup --config ../rollup.config.js",
+      "build:css": "node ../scripts/build-css.js $(pwd)",
+      "prepublish": "yarn build"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "clsx": "^1.0.4",
+      "immutable": "~3.7.4",
+      "lodash": "^4.17.14",
+      "lodash-es": "^4.17.15",
+      "prop-types": "^15.5.8"
+    },
+    "peerDependencies": {
+      "draft-js": "^0.10.1 || ^0.11.0",
+      "react": "^16.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
