@@ -38,7 +38,7 @@
     "clsx": "^1.0.4",
     "immutable": "~3.7.4",
     "lodash": "^4.17.14",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "prop-types": "^15.5.8",
     "rimraf": "^3.0.2"
   },
